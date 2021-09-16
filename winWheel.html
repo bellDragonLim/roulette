@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>룰렛 돌리기</title>
+        
+    <!-- css-custom -->
+        <link rel="stylesheet" href="./winWheel.css">
+
+    <!-- js-lib -->
+        <script src="./lib/Winwheel.min.js"></script>
+        <script src="./lib/TweenMax.min.js"></script>
+        <!-- http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js -->
+
+    <!-- js-custom -->
+        <script defer src="./myWinWheel.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>룰렛</h1>
+            <div class="roulette">
+                <div id="pin"></div>
+                <canvas id="canvas" width="600px" height="600px">
+                    이 브라우저는 캔버스를 지원하지 않습니다. 최신 브라우저를 이용해 주세요
+                </canvas>
+                <button id="spin-btn" onclick="startSpin()">돌리기</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
